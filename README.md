@@ -7,7 +7,7 @@ The Rules of this puzzle are simple, the player needs to place all nine small sq
 The idea for the solver came to me after purchasing HEYE's Crazy9 Ketner Owls puzzle. At the back of the box it was written that the puzzle has "two different solutions (at least...)". After founding one of them, I was triggered to find the second one and discover what HEYE's creators meant by saying that this puzzle has "at least" two solutions.
 
 <p align="center">
-  <img src="./Ketner Owls/Ketner Owls.jpg" alt=".." title="Crazy9 Ketner Owls puzzle." />
+  <img src="./HEYE Ketner Owls/Ketner Owls.jpg" alt=".." title="Crazy9 Ketner Owls puzzle." />
 </p>
 
 At first, I wrote straight forward solver that checks all possible combinations with all possible card's orientations and saves only the correct one. In total, the algorithm needed to check 9!=362,880 combinations with 4^9=262,144 orientations in each combination, which means that in total there are 9!*4^9=95,126,814,720 combinations. Even if it will take 1 second for the code to check each combination with all its orientation it will take for the code more than 4 days to finish the task. And this is exactly what happened. This code ran for 4 days and presented all 16 possible solutions, but since the puzzle have two identical cards, this number of solutions should be divided by 2 and because the total list of solutions includes in it also rotated solutions, so this number also should be divided by 4. This is how I found the 2 only solutions that this puzzle has.

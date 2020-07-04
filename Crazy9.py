@@ -152,7 +152,7 @@ def is_legal(tiles, position, tile, turn, sol_tiles, sol_turns):
 
 	return False
 
-# The recursive with backtracking function that checks the combinations
+# The backtracking recursive function that checks the combinations
 def check_card_combination(tiles, position, sol_tiles, sol_turns, solutions, rotations):
 	if position > 8:
 		solutions.append(np.array(sol_tiles))

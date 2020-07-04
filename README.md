@@ -14,13 +14,9 @@ At first, I wrote straight forward solver that checks all possible combinations 
 
 Of course, this code is very inefficient since after eliminating specific combination by only examining first two cards, all other similar combinations should also be eliminated. It looked like a classic backtracking problem and in the end, this is what I did. I rewrote the code to solve this puzzle with backtracking recursive function. The improved code run for less than 2 seconds and presented me the same 16 solutions that inefficient code found, but much faster. In other words, it was a success!
 
-The inefficient code Crazy9.py also uploaded to this repository, but you are welcome to ignore it.
-
-The efficient program consists of two codes: Crazy9_BT.py and Crazy9_Results.py. The first one finds all solutions that the puzzle has and the second one creates images of these solutions.
-
-In order to execute the first code, the user needs to create a folder with the puzzle that he desires to solve and change the name of the puzzle in the correct place:
+In order to execute the code, the user needs to create a folder with the puzzle that he desires to solve and change the name of the puzzle in the correct place:
 ```[bash]
-puz = "Ketner Owls"
+puz = "HEYE Ketner Owls"
 ```
 
 Inside the puzzle folder, the user needs to have a folder that calls "Cards". The folder will have the scans of all 9 cards and "Cards.ini" file in which the user needs to import the figures that the cards have, for example:
@@ -36,30 +32,8 @@ where numbering of the locations defined in next manner:
   <img src="./Locations.png" alt=".." title="Locations." />
 </p>
 
+In order to save the results, the user must have the scans of the cards in "Cards" folder, named "Card 01.png", "Card 02.png", etc., accordingly to the order and the orientation that was typed in the input file "Cards.ini". This code will create folder "Solutions (Repeated)" inside puzzles folder and will save all possible solutions that the puzzle has as a PNG image. In this folder all solutions will be presented, including repeated one. There are two kinds of repeated solutions: rotated and double carded. The non-repeated solutions will be presented in puzzles folder.
+
 The code is ready to run.
 
-There are two outputs that the code can show.
-- First output:
-```[bash]
-Total number of corrected combinations that was found: 16
-Running time: 1.878 seconds
-```
-- Second output:
-```[bash]
-Saved data file already exist. Please create backup before running this code again.
-```
-The first one means that the code successfully executed. It presents the running-time and a total number of possible solutions with the given cards. In addition to that, the code creates "Saved Data.txt" file inside puzzles folder, where is saves the corrected combinations with cards orientations.
-The second output I created in case that the user already has a "Saved Data.txt" file, so the code prevented from overwriting of this file.
-
-After that, if user wants to see all the possible results, he should execute the Crazy9_Results.py. For this, the user must have the scans of the cards in Cards folder, named "Card 01.png", "Card 02.png", "Card 03.png", etc., accordingly to the order and the orientation that was typed in the input file "Cards.ini".
-
-This code will create folder "Solutions" inside puzzles folder and will save all possible solutions that the puzzle has as a PNG image.
-
-In addition to HEYE's Crazy9 Ketner Owls puzzle, I found another two puzzles online to test the codes, "Houses" and "Vin, Vino, Wein, Wine!". Their cards and solutions also included in this repository. Accordingly to HEYE's website, https://heye-puzzle.de/en/?s=crazy9, they have another three puzzles: Burgerman Doddles, Mordillo Cows and Wachtmeister Cats. Hopefully I will purchase them and will be able to present their solutions too.
-
-### Notes:
-Two minor additions that can be added to the code:
-- Check if there are similar cards and removed identical solutions.
-- Remove the rotated solutions.
-
-Probably I will spend some time in a near future and add this two last features, but until then, we will continue to get multiplied solutions.
+In addition to HEYE's Crazy9 Ketner Owls puzzle, I found another puzzle online to test the codes, "Houses". Its cards and solutions also included in this repository. Accordingly to HEYE's website, https://heye-puzzle.de/en/?s=crazy9, they have another three puzzles: Burgerman Doddles, Mordillo Cows and Wachtmeister Cats. Hopefully I will purchase them and will be able to present their solutions too.

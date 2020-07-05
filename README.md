@@ -34,6 +34,8 @@ where numbering of the locations defined in next manner:
 
 In order to save the results, the user must have the scans of the cards in "Cards" folder, named "Card 01.png", "Card 02.png", etc., accordingly to the order and the orientation that was typed in the input file "Cards.ini". This code will create folder "Solutions (Repeated)" inside puzzles folder and will save all possible solutions that the puzzle has as a PNG image. In this folder all solutions will be presented, including repeated one. There are two kinds of repeated solutions: rotated and double carded. The non-repeated solutions will be presented in puzzles folder.
 
-The code is ready to run.
+The code is ready to run! Have fun.
+
+###Note
 
 In addition to HEYE's Crazy9 Ketner Owls puzzle, I found another puzzle online to test the codes, "Houses". Its cards and solutions also included in this repository. Accordingly to HEYE's website, https://heye-puzzle.de/en/?s=crazy9, they have another three puzzles: Burgerman Doddles, Mordillo Cows and Wachtmeister Cats. Hopefully I will purchase them and will be able to present their solutions too.

@@ -36,6 +36,6 @@ In order to save the results, the user must have the scans of the cards in "Card
 
 The code is ready to run! Have fun.
 
-###Note
+### Note
 
 In addition to HEYE's Crazy9 Ketner Owls puzzle, I found another puzzle online to test the codes, "Houses". Its cards and solutions also included in this repository. Accordingly to HEYE's website, https://heye-puzzle.de/en/?s=crazy9, they have another three puzzles: Burgerman Doddles, Mordillo Cows and Wachtmeister Cats. Hopefully I will purchase them and will be able to present their solutions too.

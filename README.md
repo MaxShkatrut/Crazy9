@@ -36,8 +36,8 @@ where numbering of the locations defined in next manner:
 
 First, the code will present the summary of the run:
 ```[bash]
-Total number of corrected combinations that was found: 16
-Running time: 1.76280 seconds
+Running time: 1.73160 seconds
+Total number of corrected combinations that were found: 16
 Number of corrected combinations after elimation of rotated solutions: 4
 Number of corrected combinations after elimation double carded solutions: 2
 ```

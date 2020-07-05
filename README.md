@@ -1,5 +1,6 @@
 # Crazy9
 
+## Introduction
 Solver for Crazy9 puzzle, or as it calls at his original German name: Legespiel.
 
 The Rules of this puzzle are simple, the player needs to place all nine small squares in larger 3x3 square in a manner that all images fit together.
@@ -14,6 +15,7 @@ At first, I wrote straight forward solver that checks all possible combinations 
 
 Of course, this code is very inefficient since after eliminating specific combination by only examining first two cards, all other similar combinations should also be eliminated. It looked like a classic backtracking problem and in the end, this is what I did. I rewrote the code to solve this puzzle with backtracking recursive function. The improved code run for less than 2 seconds and presented me the same 16 solutions that inefficient code found, but much faster. In other words, it was a success!
 
+## Execution
 In order to execute the code, the user needs to create a folder with the puzzle that he desires to solve and change the name of the puzzle in the correct place:
 ```[bash]
 puz = "HEYE Ketner Owls"
@@ -32,10 +34,17 @@ where numbering of the locations defined in next manner:
   <img src="./Locations.png" alt=".." title="Locations." />
 </p>
 
-In order to save the results, the user must have the scans of the cards in "Cards" folder, named "Card 01.png", "Card 02.png", etc., accordingly to the order and the orientation that was typed in the input file "Cards.ini". This code will create folder "Solutions (Repeated)" inside puzzles folder and will save all possible solutions that the puzzle has. In this folder all solutions will be presented, including the repeated ones, which consist of two kinds: rotated and double carded. The non-repeated solutions will be presented in puzzles folder.
+First, the code will present the summary of the run:
+```[bash]
+Total number of corrected combinations that was found: 16
+Running time: 1.76280 seconds
+Number of corrected combinations after elimation of rotated solutions: 4
+Number of corrected combinations after elimation double carded solutions: 2
+```
 
-The code is ready to run. Have fun!
+After that, the code will save the visual solutions. In order from it to be able to do it, the user must have the scans of the cards in "Cards" folder, named "Card 01.png", "Card 02.png", etc., accordingly to the order and the orientation that was typed in the input file "Cards.ini". This code will create folder "Solutions (Repeated)" inside puzzles folder and will save all possible solutions that the puzzle has. In this folder all solutions will be presented, including the repeated ones, which consist of two kinds: rotated and double carded. The non-repeated solutions will be presented in puzzles folder.
+
+That's it, the code is ready to run. Have fun!
 
 ### Note
-
 In addition to HEYE's Crazy9 Ketner Owls puzzle, I found another puzzle online to test the codes, "Houses". Its cards and solutions also included in this repository. Accordingly to HEYE's website, https://heye-puzzle.de/en/?s=crazy9, they have another three puzzles: Burgerman Doddles, Mordillo Cows and Wachtmeister Cats. Hopefully I will purchase them and will be able to present their solutions too.

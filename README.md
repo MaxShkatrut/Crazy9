@@ -32,7 +32,7 @@ where numbering of the locations defined in next manner:
   <img src="./Locations.png" alt=".." title="Locations." />
 </p>
 
-In order to save the results, the user must have the scans of the cards in "Cards" folder, named "Card 01.png", "Card 02.png", etc., accordingly to the order and the orientation that was typed in the input file "Cards.ini". This code will create folder "Solutions (Repeated)" inside puzzles folder and will save all possible solutions that the puzzle has as a PNG image. In this folder all solutions will be presented, including repeated ones, which consist of two kinds: rotated and double carded. The non-repeated solutions will be presented in puzzles folder.
+In order to save the results, the user must have the scans of the cards in "Cards" folder, named "Card 01.png", "Card 02.png", etc., accordingly to the order and the orientation that was typed in the input file "Cards.ini". This code will create folder "Solutions (Repeated)" inside puzzles folder and will save all possible solutions that the puzzle has. In this folder all solutions will be presented, including the repeated ones, which consist of two kinds: rotated and double carded. The non-repeated solutions will be presented in puzzles folder.
 
 The code is ready to run. Have fun!
 

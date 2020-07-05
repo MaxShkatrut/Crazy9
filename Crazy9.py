@@ -185,7 +185,7 @@ check_card_combination(tiles, 0, sol_tiles, sol_turns, solutions_rep, rotations_
 
 num_of_sols_rep = len(solutions_rep)
 print('Running time: %.5f seconds' % (time.time() - start_time))
-print('Total number of corrected combinations that were found: %d' % num_of_sols_rep)
+print('Total number of corrected combinations: %d' % num_of_sols_rep)
 
 # Check repeated solutions
 # Rotate solution 90 degrees {rotations} times

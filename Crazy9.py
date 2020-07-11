@@ -1,13 +1,10 @@
 import os
-import math
 import time
 import numpy as np
-import itertools
 import configparser
 from PIL import Image
 
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 from matplotlib.pyplot import figure
 
 # Puzzles Type
